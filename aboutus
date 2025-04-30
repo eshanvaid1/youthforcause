@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us | Youth for Cause Foundation</title>
+  <meta name="description" content="Learn more about Youth for Cause Foundation, a youth-led initiative focused on community service, environmental sustainability, and helping those in need.">
+  <style>
+    :root {
+      --green: #A8D5BA;
+      --peach: #F6D6AD;
+      --offwhite: #FFFDF7;
+      --dark: #444;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+      background: var(--offwhite);
+      color: var(--dark);
+      overflow-x: hidden;
+    }
+
+    /* Navbar Styles */
+    .navbar {
+      background-color: var(--peach);
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .navbar a {
+      color: var(--dark);
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: background 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: var(--green);
+      border-radius: 6px;
+    }
+
+    /* About Section Styles */
+    .about-section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .about-section h2 {
+      font-size: 2.5em;
+      color: var(--green);
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .about-section img {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: var(--peach);
+      color: var(--dark);
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    a {
+      color: var(--dark);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="donate.html">Donate</a>
+    <a href="volunteer.html">Volunteer</a>
+    <a href="programs.html">Programs</a>
+    <a href="shopping.html">Shopping</a>
+  </nav>
+
+  <!-- About Us Section -->
+  <div class="about-section">
+    <h2>About Us</h2>
+    <p>
+      Youth for Cause Foundation is a youth-led initiative created by a group of passionate kids from the Greater Toronto Area. The foundation is dedicated to supporting community workers such as firefighters, police officers, healthcare workers, and waste management professionals, who play a crucial role in keeping our communities safe and running smoothly.
+    </p>
+    
+    <p>
+      The foundation's journey began in the autumn of 2022, when a group of young friends decided to organize a simple lemonade stand to raise funds for firefighters battling deadly wildfires in Alberta. This small act of kindness quickly grew into a larger movement, and today, the foundation runs various programs that engage kids in volunteering opportunities across Peel Region. Our future plans include expanding these programs and building a stronger, more supportive community for future generations.
+    </p>
+
+    <h3>Our Mission</h3>
+    <p>
+      To inspire youth to make a positive impact in their communities by volunteering and supporting essential services like firefighters, police, healthcare workers, and more. We believe in a future where every young person feels empowered to contribute to society, making our world a better place for all.
+    </p>
+
+    <h3>Our Vision</h3>
+    <p>
+      We envision a world where youth actively participate in community service, environmental sustainability, and helping those in need. Our aim is to build a culture of care, kindness, and social responsibility that lasts for generations.
+    </p>
+
+    <h3>Our Founder</h3>
+    <p>
+      The foundation is currently led by <strong>Mesha Vaid</strong>, a 9-year-old student at Alloa Public School in Caledon. Mesha's leadership and vision have guided the foundation from its humble beginnings to a growing movement that continues to inspire others to make a difference.
+    </p>
+    
+    <img src="https://images.unsplash.com/photo-1504285294151-bca9d60401a1?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjU1OXwwfDF8c2VhY2h8NXx8dm9sdW50ZWVyaW5nJTIwbmVpZ2hib3Job29kfGRlc2lnbnxlbnwwfHx8fDE2NDUwOTMwMzM&ixlib=rb-1.2.1&q=80&fm=jpg" alt="Kids volunteering">
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 <a href="https://youthforcause.com">youthforcause.com</a> | Youth for Cause Foundation
+  </footer>
+
+</body>
+</html>
