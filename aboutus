@@ -8,7 +8,7 @@
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #ffffff;
-      color: #000000; /* Changed text color to black */
+      color: #000000;
       margin: 0;
       padding: 0;
     }
@@ -50,9 +50,6 @@
       color: #990000;
       margin-top: 30px;
     }
-    .content p {
-      line-height: 1.6;
-    }
     footer {
       background-color: #990000;
       color: #ffffff;
@@ -64,17 +61,12 @@
       color: #ffffff;
       text-decoration: underline;
     }
-    .image-gallery img {
-      width: 100%;
-      max-width: 500px;
-      margin-bottom: 20px;
-    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>About Us - Youth for Cause Foundation</h1>
+    <h1>About Us</h1>
   </header>
 
   <nav>
@@ -87,42 +79,21 @@
   </nav>
 
   <div class="content">
-    <h2>Our Mission</h2>
     <p>
-      Youth for Cause Foundation was founded by a group of children from the Greater Toronto Area who are passionate about supporting the heroes in our communities. From firefighters to police officers, healthcare workers to waste management staff, we believe it is important to recognize the invaluable role these workers play in keeping our communities safe and clean.
-    </p>
-
-    <h2>Our Story</h2>
-    <p>
-      The foundation began in the autumn of 2022 when a few kids decided to open a lemonade stand to raise funds for firefighters who were battling deadly fires in Alberta. What started as a small gesture quickly grew into a foundation that now offers a volunteer program for kids across the Peel Region.
+      Youth for Cause Foundation was launched by kids from the Greater Toronto Area who wanted to support community workers like firefighters, police officers, healthcare workers, and waste management staff, who assist us in times of crisis and keep our communities running smoothly.
     </p>
 
     <p>
-      Our goal is to empower the youth of today to make a difference in their communities. We focus on initiatives that support frontline workers, clean up our environment, and care for those in need. Through our programs, we aim to create a lasting impact that will strengthen our communities and build a better future for generations to come.
+      The foundation began as an initiative by a few kids who decided to open a lemonade stand in autumn 2022 to raise funds for firefighters battling deadly fires in Alberta. Today, the foundation offers a volunteer program for kids across the Peel Region and aims to support communities and build a stronger country for future generations.
     </p>
 
-    <h2>Leadership</h2>
     <p>
-      The foundation is currently led by Mesha Vaid, a 9-year-old student at Alloa Public School in Caledon. Mesha's vision, along with the support of her friends and family, continues to drive the foundation's growth and success.
+      We believe that small acts of kindness by young people can add up to a big difference. Our team of young volunteers works together to plan community events, raise funds, and offer support to local organizations in need.
     </p>
 
-    <h2>Our Values</h2>
-    <ul>
-      <li>Community Impact: We work to make a positive impact in the communities we serve.</li>
-      <li>Volunteerism: We believe in the power of volunteers and encourage youth to get involved.</li>
-      <li>Support: We strive to support and appreciate the hard work of frontline community workers.</li>
-      <li>Environmental Stewardship: We are committed to preserving and cleaning our environment.</li>
-      <li>Empowerment: We empower young people to take leadership roles and make a difference.</li>
-    </ul>
-
-    <h2>How You Can Help</h2>
+    <h2>Meet the Founder</h2>
     <p>
-      There are many ways you can support the foundation, whether it's by donating, volunteering, or purchasing our branded apparel and accessories. Every little bit helps, and together, we can continue to build stronger, more supportive communities.
-    </p>
-
-    <h2>Get Involved</h2>
-    <p>
-      To learn more about how you can get involved, visit our <a href="volunteer.html">volunteer page</a> or <a href="donate.html">donate</a> today. Together, we can make a difference!
+      The foundation is currently led by Mesha Vaid, a 9-year-old student at Alloa Public School in Caledon. Mesha, along with her friends, founded this initiative to make a positive impact on their community and inspire others to take action.
     </p>
   </div>
 
