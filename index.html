@@ -1,243 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Youth for Cause Foundation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteer - Youth for Cause Foundation</title>
   <style>
-    :root {
-      --green: #A8D5BA;
-      --peach: #F6D6AD;
-      --offwhite: #FFFDF7;
-      --dark: #444;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--offwhite);
-      color: var(--dark);
-      line-height: 1.6;
+      background-color: #FFFDF7;
+      color: #444;
+      margin: 0;
+      padding: 0;
     }
-
-    nav {
-      background-color: var(--peach);
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 15px 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    nav a {
-      color: var(--dark);
-      text-decoration: none;
-      padding: 12px 20px;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-
-    nav a:hover {
-      background-color: var(--green);
-      border-radius: 6px;
-    }
-
-    header {
+    .video-header {
       position: relative;
-      width: 100vw;
-      height: 50vh;
+      width: 100%;
+      height: 40vh;
       overflow: hidden;
     }
-
-    header iframe {
+    .video-header iframe {
       width: 100%;
       height: 100%;
       border: none;
     }
-
-    .header-content {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.4);
+    header {
+      background-color: #A8D5BA;
+      padding: 30px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      background-color: #F6D6AD;
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      padding: 20px;
+      padding: 12px;
     }
-
-    .header-content h1 {
-      font-size: 2.8em;
-      margin-bottom: 10px;
+    nav a {
+      color: #444;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-weight: bold;
     }
-
-    .header-content p {
-      font-size: 1.3em;
+    nav a:hover {
+      background-color: #A8D5BA;
+      border-radius: 6px;
     }
-
-    .section {
-      padding: 40px 20px;
+    .content {
       max-width: 1000px;
-      margin: auto;
-      text-align: center;
+      margin: 40px auto;
+      padding: 0 20px;
     }
-
-    .section h2 {
-      color: var(--green);
-      margin-bottom: 20px;
-      font-size: 2em;
+    .content h2 {
+      color: #A8D5BA;
+      margin-top: 30px;
     }
-
-    .section p {
-      font-size: 1.1em;
-      margin-bottom: 20px;
+    .content ul {
+      list-style: disc;
+      padding-left: 20px;
     }
-
     .btn {
       display: inline-block;
-      margin: 10px 10px 0;
       padding: 12px 24px;
-      background-color: var(--green);
+      margin-top: 20px;
+      background-color: #A8D5BA;
       color: white;
       text-decoration: none;
-      border-radius: 6px;
       font-weight: bold;
-      transition: background 0.3s ease;
+      border-radius: 5px;
     }
-
     .btn:hover {
       background-color: #8ccba1;
     }
-
-    .full-image {
-      width: 100%;
-      height: auto;
-      display: block;
-      margin: 40px 0;
-    }
-
     footer {
-      background-color: var(--peach);
+      background-color: #F6D6AD;
       text-align: center;
       padding: 20px;
       margin-top: 40px;
-      font-size: 0.95em;
-    }
-
-    footer a {
-      color: var(--dark);
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="#about">About Us</a>
-    <a href="#donate">Donate</a>
-    <a href="#volunteer">Volunteer</a>
-    <a href="#programs">Programs</a>
-    <a href="#shop">Shopping</a>
-  </nav>
+  <div class="video-header">
+    <iframe src="https://www.youtube.com/embed/NMeAL8J1fco?autoplay=1&mute=1&loop=1&playlist=NMeAL8J1fco" allowfullscreen></iframe>
+  </div>
 
-  <!-- Video Header -->
   <header>
-    <iframe 
-      src="https://www.youtube.com/embed/NMeAL8J1fco?autoplay=1&mute=1&loop=1&playlist=NMeAL8J1fco" 
-      allow="autoplay; fullscreen" allowfullscreen>
-    </iframe>
-    <div class="header-content">
-      <h1>Youth for Cause Foundation</h1>
-      <p>Building Stronger Communities Together</p>
-    </div>
+    <h1>Volunteer with Us</h1>
   </header>
 
-  <!-- Welcome Section -->
-  <section class="section">
-    <h2>Welcome to Youth for Cause</h2>
-    <p>
-      A youth-led foundation from the Greater Toronto Area, launched by kids who want to support community workers like firefighters who assist us in containing deadly fires, police, healthcare workers, and waste management workers.
-    </p>
-  </section>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="volunteer.html">Volunteering</a>
+    <a href="programs.html">Programs</a>
+    <a href="donate.html">Donations</a>
+    <a href="shopping.html">Shopping</a>
+  </nav>
 
-  <!-- Full-width Image -->
-  <img src="https://images.unsplash.com/photo-1601747364580-75d19a8ef498?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1600" alt="Kids Volunteering" class="full-image" />
+  <div class="content">
+    <p>
+      At Youth for Cause Foundation, we believe young people have the power to create meaningful change. Our volunteer program is designed to engage children and families in impactful community service.
+    </p>
 
-  <!-- About Us -->
-  <section class="section" id="about">
-    <h2>About Us</h2>
-    <p>
-      The initiative started in the autumn of 2022 when a few kids opened a lemonade stand to support firefighters dealing with deadly fires in Alberta. Since then, it has grown into a volunteer program for kids across the Peel Region. Our future plans include supporting more communities and helping build a better country for future generations.
-    </p>
-    <p>
-      The foundation is currently led by <strong>Mesha Vaid</strong>, a 9-year-old student at Alloa Public School in Caledon.
-    </p>
-  </section>
-
-  <!-- Donation Section -->
-  <section class="section" id="donate" style="background-color: #F9F9F9;">
-    <h2>Donate</h2>
-    <p>
-      You can support the foundation by donating towards our key programs:
-    </p>
-    <ul style="text-align:left; max-width: 700px; margin: auto;">
-      <li>Supporting community workers (firefighters, police, healthcare, etc.)</li>
-      <li>Cleaning the environment and local neighborhoods</li>
-      <li>Helping local hospices and those in need</li>
+    <h2>Why Volunteer?</h2>
+    <ul>
+      <li>Make a difference in your community</li>
+      <li>Support frontline workers and local services</li>
+      <li>Help clean and protect the environment</li>
+      <li>Earn volunteer hours for school</li>
+      <li>Develop leadership and teamwork skills</li>
     </ul>
-    <a href="donate.html" class="btn">Make a Donation</a>
-  </section>
 
-  <!-- Volunteer Section -->
-  <section class="section" id="volunteer">
-    <h2>Volunteer</h2>
+    <h2>Who Can Volunteer?</h2>
     <p>
-      Join our growing group of young volunteers from Peel Region! We organize regular community service events, clean-up drives, and educational initiatives. Kids and families are welcome.
+      Our program is open to kids, youth, and families across the Peel Region. Whether you're 6 or 16, there's a way for you to get involved and support our mission.
     </p>
-    <a href="volunteer.html" class="btn">Sign Up to Volunteer</a>
-  </section>
 
-  <!-- Programs Section -->
-  <section class="section" id="programs" style="background-color: #F9F9F9;">
-    <h2>Our Programs</h2>
-    <p>We focus on:</p>
-    <ul style="text-align:left; max-width: 700px; margin: auto;">
-      <li><strong>Community Support:</strong> Donations and gifts for frontline workers</li>
-      <li><strong>Environmental Clean-up:</strong> Organizing kids and families to clean parks and public spaces</li>
-      <li><strong>Hospice Help:</strong> Creating care packages and art for those in palliative care</li>
+    <h2>Types of Opportunities</h2>
+    <ul>
+      <li>Community clean-up events</li>
+      <li>Appreciation kits for healthcare and emergency workers</li>
+      <li>Creating art and care packages for hospices</li>
+      <li>Helping run awareness campaigns</li>
+      <li>Assisting with lemonade stands and fundraisers</li>
     </ul>
-  </section>
 
-  <!-- Shopping Section -->
-  <section class="section" id="shop">
-    <h2>Shop to Support</h2>
+    <h2>How to Get Started</h2>
     <p>
-      Purchase Youth for Cause apparel and accessories to support our mission. All proceeds help fund our community programs.
+      Simply click the button below to register as a volunteer. A parent or guardian’s permission is required for minors.
     </p>
-    <a href="shopping.html" class="btn">Visit Our Shop</a>
-  </section>
+    <a href="#" class="btn">Register to Volunteer</a>
+  </div>
 
-  <!-- Footer -->
   <footer>
-    &copy; 2025 <a href="https://youthforcause.com">youthforcause.com</a> | Youth for Cause Foundation
+    &copy; 2025 Youth for Cause Foundation | <a href="https://youthforcause.com">youthforcause.com</a>
   </footer>
 
 </body>
