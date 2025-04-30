@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Youth for Cause Foundation</title>
   <style>
     :root {
@@ -13,15 +13,16 @@
     }
 
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      background: var(--offwhite);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--offwhite);
       color: var(--dark);
+      line-height: 1.6;
     }
 
     nav {
@@ -40,7 +41,7 @@
       text-decoration: none;
       padding: 12px 20px;
       font-weight: bold;
-      transition: background 0.3s;
+      transition: background 0.3s ease;
     }
 
     nav a:hover {
@@ -67,7 +68,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.4);
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -78,39 +79,40 @@
     }
 
     .header-content h1 {
-      font-size: 2.5em;
+      font-size: 2.8em;
+      margin-bottom: 10px;
     }
 
     .header-content p {
-      font-size: 1.2em;
+      font-size: 1.3em;
     }
 
     .section {
       padding: 40px 20px;
-      text-align: center;
       max-width: 1000px;
       margin: auto;
+      text-align: center;
     }
 
     .section h2 {
       color: var(--green);
       margin-bottom: 20px;
+      font-size: 2em;
     }
 
     .section p {
       font-size: 1.1em;
-      line-height: 1.6;
+      margin-bottom: 20px;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 20px;
+      margin: 10px 10px 0;
       padding: 12px 24px;
       background-color: var(--green);
       color: white;
-      border: none;
-      border-radius: 5px;
       text-decoration: none;
+      border-radius: 6px;
       font-weight: bold;
       transition: background 0.3s ease;
     }
@@ -123,7 +125,7 @@
       width: 100%;
       height: auto;
       display: block;
-      margin: 20px 0;
+      margin: 40px 0;
     }
 
     footer {
@@ -131,19 +133,29 @@
       text-align: center;
       padding: 20px;
       margin-top: 40px;
+      font-size: 0.95em;
+    }
+
+    footer a {
+      color: var(--dark);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- Navigation -->
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="donate.html">Donate</a>
-    <a href="volunteer.html">Volunteer</a>
-    <a href="programs.html">Programs</a>
-    <a href="shopping.html">Shopping</a>
+    <a href="#about">About Us</a>
+    <a href="#donate">Donate</a>
+    <a href="#volunteer">Volunteer</a>
+    <a href="#programs">Programs</a>
+    <a href="#shop">Shopping</a>
   </nav>
 
   <!-- Video Header -->
@@ -162,23 +174,65 @@
   <section class="section">
     <h2>Welcome to Youth for Cause</h2>
     <p>
-      A youth-led foundation from the Greater Toronto Area, launched by kids who care deeply about our community workers and environment. We support firefighters, police, healthcare workers, waste management, and local hospices through donations, clean-up programs, and community volunteering.
+      A youth-led foundation from the Greater Toronto Area, launched by kids who want to support community workers like firefighters who assist us in containing deadly fires, police, healthcare workers, and waste management workers.
     </p>
-    <a href="about.html" class="btn">Learn More About Us</a>
   </section>
 
-  <!-- Full-width Kids Volunteering Image Example -->
-  <img src="https://images.unsplash.com/photo-1601747364580-75d19a8ef498?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1600" alt="Kids Volunteering" class="full-image">
+  <!-- Full-width Image -->
+  <img src="https://images.unsplash.com/photo-1601747364580-75d19a8ef498?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1600" alt="Kids Volunteering" class="full-image" />
 
-  <!-- Get Involved Section -->
-  <section class="section" style="background-color: #F9F9F9;">
-    <h2>How You Can Help</h2>
+  <!-- About Us -->
+  <section class="section" id="about">
+    <h2>About Us</h2>
     <p>
-      You can support the foundation by donating, volunteering, or purchasing merchandise. All proceeds go directly into programs that help clean the environment and support our community heroes.
+      The initiative started in the autumn of 2022 when a few kids opened a lemonade stand to support firefighters dealing with deadly fires in Alberta. Since then, it has grown into a volunteer program for kids across the Peel Region. Our future plans include supporting more communities and helping build a better country for future generations.
     </p>
-    <a href="donate.html" class="btn">Donate</a>
-    <a href="volunteer.html" class="btn">Volunteer</a>
-    <a href="shopping.html" class="btn">Shop & Support</a>
+    <p>
+      The foundation is currently led by <strong>Mesha Vaid</strong>, a 9-year-old student at Alloa Public School in Caledon.
+    </p>
+  </section>
+
+  <!-- Donation Section -->
+  <section class="section" id="donate" style="background-color: #F9F9F9;">
+    <h2>Donate</h2>
+    <p>
+      You can support the foundation by donating towards our key programs:
+    </p>
+    <ul style="text-align:left; max-width: 700px; margin: auto;">
+      <li>Supporting community workers (firefighters, police, healthcare, etc.)</li>
+      <li>Cleaning the environment and local neighborhoods</li>
+      <li>Helping local hospices and those in need</li>
+    </ul>
+    <a href="donate.html" class="btn">Make a Donation</a>
+  </section>
+
+  <!-- Volunteer Section -->
+  <section class="section" id="volunteer">
+    <h2>Volunteer</h2>
+    <p>
+      Join our growing group of young volunteers from Peel Region! We organize regular community service events, clean-up drives, and educational initiatives. Kids and families are welcome.
+    </p>
+    <a href="volunteer.html" class="btn">Sign Up to Volunteer</a>
+  </section>
+
+  <!-- Programs Section -->
+  <section class="section" id="programs" style="background-color: #F9F9F9;">
+    <h2>Our Programs</h2>
+    <p>We focus on:</p>
+    <ul style="text-align:left; max-width: 700px; margin: auto;">
+      <li><strong>Community Support:</strong> Donations and gifts for frontline workers</li>
+      <li><strong>Environmental Clean-up:</strong> Organizing kids and families to clean parks and public spaces</li>
+      <li><strong>Hospice Help:</strong> Creating care packages and art for those in palliative care</li>
+    </ul>
+  </section>
+
+  <!-- Shopping Section -->
+  <section class="section" id="shop">
+    <h2>Shop to Support</h2>
+    <p>
+      Purchase Youth for Cause apparel and accessories to support our mission. All proceeds help fund our community programs.
+    </p>
+    <a href="shopping.html" class="btn">Visit Our Shop</a>
   </section>
 
   <!-- Footer -->
