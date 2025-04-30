@@ -6,24 +6,30 @@
   <title>Youth for Cause Foundation | youthforcause.com</title>
   <meta name="description" content="Youth for Cause Foundation is a youth-led initiative focused on community service, environmental sustainability, and helping people in need.">
   <style>
+    :root {
+      --green: #A8D5BA;
+      --peach: #F6D6AD;
+      --offwhite: #FFFDF7;
+      --dark: #444;
+    }
+
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f2f7f4;
-      color: #333;
+      background: var(--offwhite);
+      color: var(--dark);
     }
 
     header {
-      background-color: #2e7d32;
-      color: white;
-      padding: 30px 20px;
+      background-color: var(--green);
+      color: var(--dark);
       text-align: center;
+      padding: 40px 20px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 2.8em;
     }
 
     header p {
@@ -31,40 +37,49 @@
       font-size: 1.2em;
     }
 
-    .hero {
-      width: 100%;
-      max-height: 400px;
-      overflow: hidden;
+    .navbar {
+      background-color: var(--peach);
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+
+    .navbar a {
+      color: var(--dark);
+      padding: 12px 18px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+      transition: background 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: var(--green);
+      border-radius: 6px;
     }
 
     .hero img {
       width: 100%;
-      height: auto;
+      max-height: 400px;
+      object-fit: cover;
       display: block;
     }
 
     main {
       padding: 40px 20px;
-      text-align: center;
+      max-width: 1000px;
+      margin: 0 auto;
     }
 
     section {
-      margin: 50px auto;
-      max-width: 800px;
-    }
-
-    section img {
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-      margin: 20px 0;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 60px;
     }
 
     section h2 {
-      color: #2e7d32;
-      font-size: 1.8em;
-      margin-bottom: 10px;
+      font-size: 2em;
+      color: var(--green);
+      margin-bottom: 15px;
     }
 
     section p {
@@ -72,17 +87,49 @@
       line-height: 1.6;
     }
 
+    section img {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      border-radius: 10px;
+      margin: 20px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .program-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .program-card {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    .program-card h3 {
+      margin-top: 0;
+      color: var(--dark);
+    }
+
+    .program-card p {
+      margin-bottom: 0;
+    }
+
     footer {
-      background-color: #c8e6c9;
-      color: #2e7d32;
+      background-color: var(--peach);
+      color: var(--dark);
       text-align: center;
-      padding: 15px 10px;
-      margin-top: 60px;
+      padding: 20px;
+      margin-top: 40px;
     }
 
     a {
-      color: #2e7d32;
-      text-decoration: none;
+      color: var(--dark);
     }
   </style>
 </head>
@@ -93,38 +140,72 @@
     <p>Empowering Youth, Serving Communities, Creating Change</p>
   </header>
 
+  <nav class="navbar">
+    <a href="#about">About Us</a>
+    <a href="#donate">Donate</a>
+    <a href="#volunteer">Volunteer</a>
+    <a href="#programs">Programs</a>
+    <a href="#shopping">Shopping</a>
+  </nav>
+
   <div class="hero">
-    <img src="https://images.unsplash.com/photo-1509099836639-18ba1029a23c?auto=format&fit=crop&w=1600&q=80" alt="Youth volunteers working together">
+    <img src="https://images.unsplash.com/photo-1509099836639-18ba1029a23c?auto=format&fit=crop&w=1600&q=80" alt="Youth volunteering together">
   </div>
 
   <main>
-    <section>
-      <h2>Welcome to youthforcause.com</h2>
-      <img src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=800&q=80" alt="Young people helping others">
+    <section id="about">
+      <h2>About Us</h2>
       <p>
-        We are a youth-led nonprofit dedicated to building stronger communities through volunteerism, environmental action, and helping those in need.
+        Youth for Cause Foundation is a youth-led nonprofit organization committed to social impact through volunteering, environmental care, and support for underprivileged individuals and families.
       </p>
+      <img src="https://images.unsplash.com/photo-1556742033-d5c0d4c6d1b2?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjU1OXwwfDF8c2VhY2h8Mnx8dm9sdW50ZWVyaW5nJTIwbmVpZ2hib3Job29kfGRlc2lnbnxlbnwwfHx8fDE2NDUwOTMwMzM&ixlib=rb-1.2.1&q=80&fm=jpg" alt="Kids working on community project">
     </section>
 
-    <section>
-      <h2>Our Focus Areas</h2>
-      <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=800&q=80" alt="Environmental clean-up effort">
+    <section id="donate">
+      <h2>Donate</h2>
       <p>
-        🌱 Clean Environment • 💖 Support for People in Need • 🙌 Community Service
+        Help us expand our reach. Your donations directly support our cleanup drives, food kits, educational workshops, and care packs for families in need. Every rupee counts.
       </p>
+      <img src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=800&q=80" alt="Donation drive with kids">
     </section>
 
-    <section>
-      <h2>Join Our Mission</h2>
-      <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80" alt="Volunteers working with a community">
+    <section id="volunteer">
+      <h2>Volunteer</h2>
       <p>
-        Ready to make a difference? <a href="mailto:contact@youthforcause.com">Email us</a> to volunteer, donate, or partner with us.
+        Join our team of changemakers. We welcome students, working professionals, and community leaders who want to give back, learn, and grow together.
       </p>
+      <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=800&q=80" alt="Volunteers helping others">
+    </section>
+
+    <section id="programs">
+      <h2>Our Programs</h2>
+      <p>We focus on three core impact areas to bring long-term positive change:</p>
+
+      <div class="program-grid">
+        <div class="program-card">
+          <h3>🌿 Clean & Green</h3>
+          <p>Organizing cleanup drives, planting trees, and raising awareness about sustainable practices in schools and communities.</p>
+        </div>
+        <div class="program-card">
+          <h3>💛 Care for All</h3>
+          <p>Running donation drives for clothes, food, and hygiene kits. Supporting homeless shelters and families in crisis with essentials.</p>
+        </div>
+        <div class="program-card">
+          <h3>🚀 Youth Empowerment</h3>
+          <p>Hosting leadership workshops, career mentoring sessions, and self-development programs to uplift young changemakers.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="shopping">
+      <h2>Shop for a Cause</h2>
+      <p>Coming soon: browse sustainable merchandise that supports our mission. Every purchase helps fund our initiatives and raise awareness.</p>
+      <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80" alt="Shopping with purpose">
     </section>
   </main>
 
   <footer>
-    &copy; 2025 <a href="https://youthforcause.com">youthforcause.com</a> | All Rights Reserved
+    &copy; 2025 <a href="https://youthforcause.com">youthforcause.com</a> | Youth for Cause Foundation
   </footer>
 
 </body>
