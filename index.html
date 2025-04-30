@@ -11,6 +11,7 @@
       --peach: #F6D6AD;
       --offwhite: #FFFDF7;
       --dark: #444;
+      --white: #ffffff;
     }
 
     body {
@@ -18,39 +19,61 @@
       margin: 0;
       background: var(--offwhite);
       color: var(--dark);
+      overflow-x: hidden;
     }
 
+    /* Video Header Styles */
     header {
-      background-color: var(--green);
-      color: var(--dark);
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    header video {
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .header-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--white);
       text-align: center;
-      padding: 40px 20px;
+      z-index: 10;
     }
 
-    header h1 {
+    .header-content h1 {
+      font-size: 3.5em;
       margin: 0;
-      font-size: 2.8em;
     }
 
-    header p {
-      margin-top: 10px;
-      font-size: 1.2em;
+    .header-content p {
+      font-size: 1.3em;
     }
 
+    /* Navbar Styles */
     .navbar {
       background-color: var(--peach);
       display: flex;
       justify-content: center;
-      padding: 10px;
-      flex-wrap: wrap;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 20;
     }
 
     .navbar a {
       color: var(--dark);
-      padding: 12px 18px;
+      padding: 14px 20px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 1em;
+      font-size: 1.1em;
       transition: background 0.3s ease;
     }
 
@@ -59,27 +82,41 @@
       border-radius: 6px;
     }
 
-    .hero img {
-      width: 100%;
-      max-height: 400px;
-      object-fit: cover;
-      display: block;
+    /* Banner Section */
+    .banner {
+      background-color: var(--green);
+      color: var(--white);
+      text-align: center;
+      padding: 60px 20px;
     }
 
+    .banner h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .banner p {
+      font-size: 1.2em;
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Main Content Section */
     main {
-      padding: 40px 20px;
+      padding: 60px 20px;
       max-width: 1000px;
       margin: 0 auto;
     }
 
     section {
-      margin-bottom: 60px;
+      margin-bottom: 80px;
     }
 
     section h2 {
-      font-size: 2em;
+      font-size: 2.5em;
       color: var(--green);
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
 
     section p {
@@ -96,6 +133,7 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
+    /* Program Cards */
     .program-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -104,7 +142,7 @@
     }
 
     .program-card {
-      background-color: #ffffff;
+      background-color: var(--white);
       border: 1px solid #ddd;
       padding: 20px;
       border-radius: 10px;
@@ -135,11 +173,19 @@
 </head>
 <body>
 
+  <!-- Video Header Section -->
   <header>
-    <h1>Youth for Cause Foundation</h1>
-    <p>Building Stronger Communities Together</p>
+    <video autoplay muted loop>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="header-content">
+      <h1>Youth for Cause Foundation</h1>
+      <p>Building Stronger Communities Together</p>
+    </div>
   </header>
 
+  <!-- Navigation Bar -->
   <nav class="navbar">
     <a href="#about">About Us</a>
     <a href="#donate">Donate</a>
@@ -148,10 +194,13 @@
     <a href="#shopping">Shopping</a>
   </nav>
 
-  <div class="hero">
-    <img src="https://images.unsplash.com/photo-1509099836639-18ba1029a23c?auto=format&fit=crop&w=1600&q=80" alt="Youth volunteering together">
+  <!-- Banner Section -->
+  <div class="banner">
+    <h2>Join Us in Making a Difference</h2>
+    <p>Our mission is to empower youth, support community workers, and create sustainable programs that benefit everyone. Be part of our journey!</p>
   </div>
 
+  <!-- Main Content -->
   <main>
     <section id="about">
       <h2>About Us</h2>
