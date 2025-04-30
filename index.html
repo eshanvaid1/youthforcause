@@ -10,12 +10,16 @@
       --peach: #F6D6AD;
       --offwhite: #FFFDF7;
       --dark: #444;
-      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
       font-family: 'Segoe UI', Tahoma, sans-serif;
-      margin: 0;
       background: var(--offwhite);
       color: var(--dark);
     }
@@ -24,10 +28,11 @@
       background-color: var(--peach);
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       padding: 15px 0;
       position: sticky;
       top: 0;
-      z-index: 100;
+      z-index: 1000;
     }
 
     nav a {
@@ -45,34 +50,35 @@
 
     header {
       position: relative;
+      width: 100vw;
       height: 50vh;
       overflow: hidden;
     }
 
     header iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .header-content {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      z-index: -1;
-    }
-
-    .header-content {
-      position: relative;
-      text-align: center;
-      padding: 60px 20px;
-      color: white;
       background: rgba(0, 0, 0, 0.3);
-      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
     }
 
     .header-content h1 {
       font-size: 2.5em;
-      margin-bottom: 10px;
     }
 
     .header-content p {
@@ -82,7 +88,7 @@
     .section {
       padding: 40px 20px;
       text-align: center;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
     }
 
@@ -113,6 +119,13 @@
       background-color: #8ccba1;
     }
 
+    .full-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px 0;
+    }
+
     footer {
       background-color: var(--peach);
       text-align: center;
@@ -133,13 +146,11 @@
     <a href="shopping.html">Shopping</a>
   </nav>
 
-  <!-- Header with YouTube Video -->
+  <!-- Video Header -->
   <header>
     <iframe 
       src="https://www.youtube.com/embed/NMeAL8J1fco?autoplay=1&mute=1&loop=1&playlist=NMeAL8J1fco" 
-      frameborder="0" 
-      allow="autoplay; fullscreen"
-      allowfullscreen>
+      allow="autoplay; fullscreen" allowfullscreen>
     </iframe>
     <div class="header-content">
       <h1>Youth for Cause Foundation</h1>
@@ -147,7 +158,7 @@
     </div>
   </header>
 
-  <!-- Intro Section -->
+  <!-- Welcome Section -->
   <section class="section">
     <h2>Welcome to Youth for Cause</h2>
     <p>
@@ -156,7 +167,10 @@
     <a href="about.html" class="btn">Learn More About Us</a>
   </section>
 
-  <!-- Section Placeholders -->
+  <!-- Full-width Kids Volunteering Image Example -->
+  <img src="https://images.unsplash.com/photo-1601747364580-75d19a8ef498?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1600" alt="Kids Volunteering" class="full-image">
+
+  <!-- Get Involved Section -->
   <section class="section" style="background-color: #F9F9F9;">
     <h2>How You Can Help</h2>
     <p>
