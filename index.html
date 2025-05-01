@@ -3,56 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YouthForCause Foundation</title>
+  <title>Youth for Cause Foundation</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fdf6ec;
-      color: #4b2e2e;
+      background-color: #f7f4ef;
+      color: #333;
       margin: 0;
       padding: 0;
     }
+    .video-header {
+      position: relative;
+      width: 100%;
+      height: 50vh;
+      overflow: hidden;
+    }
+    .video-header iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
     header {
-      background-color: #8b5e3c;
-      color: white;
-      padding: 40px;
+      background-color: #4e8c71;
+      padding: 20px;
       text-align: center;
+      color: #fff;
+    }
+    header img.logo {
+      max-height: 60px;
+      margin-bottom: 10px;
     }
     header h1 {
       margin: 0;
-      font-size: 3em;
+      font-size: 2.5em;
     }
     nav {
-      background-color: #d6c2a9;
+      background-color: #ffffff;
       display: flex;
       justify-content: center;
-      gap: 20px;
-      padding: 15px;
+      padding: 12px;
+      border-top: 4px solid #4e8c71;
+      border-bottom: 2px solid #ccc;
     }
     nav a {
+      color: #4e8c71;
       text-decoration: none;
-      color: #4b2e2e;
+      padding: 10px 20px;
       font-weight: bold;
     }
     nav a:hover {
-      color: #fff;
-      background-color: #8b5e3c;
-      padding: 6px 12px;
-      border-radius: 5px;
-    }
-    .video-carousel {
-      display: flex;
-      overflow-x: scroll;
-      scroll-snap-type: x mandatory;
-      gap: 10px;
-      padding: 10px;
-    }
-    .video-carousel iframe {
-      flex: 0 0 100%;
-      max-width: 100%;
-      height: 300px;
-      scroll-snap-align: start;
-      border: none;
+      background-color: #d1e7dd;
+      color: #000;
+      border-radius: 6px;
     }
     .content {
       max-width: 1000px;
@@ -60,36 +62,66 @@
       padding: 0 20px;
     }
     .content h2 {
-      color: #8b5e3c;
+      color: #4e8c71;
+      margin-top: 30px;
     }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
+    .content ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
       margin-top: 20px;
+      background-color: #4e8c71;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
     }
-    .gallery img {
-      width: 300px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
+    .btn:hover {
+      background-color: #3b6e59;
     }
     footer {
-      background-color: #8b5e3c;
-      color: white;
+      background-color: #4e8c71;
+      color: #ffffff;
       text-align: center;
       padding: 20px;
       margin-top: 40px;
     }
+    footer a {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+    .form-section form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 500px;
+    }
+    .form-section label {
+      font-weight: bold;
+    }
+    .form-section input, .form-section select, .form-section textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
   </style>
 </head>
 <body>
+
+  <div class="video-header">
+    <iframe src="https://www.youtube.com/embed/NMeAL8J1fco?autoplay=1&mute=1&loop=1&playlist=NMeAL8J1fco" allowfullscreen></iframe>
+  </div>
+
   <header>
-    <h1>YouthForCause Foundation</h1>
+    <img src="https://via.placeholder.com/150x60?text=YouthForCause+Logo" alt="Youth For Cause Foundation Logo" class="logo">
+    <h1>Youth For Cause Foundation</h1>
   </header>
 
   <nav>
+    <a href="index.html">Home</a>
     <a href="aboutus.html">About Us</a>
     <a href="volunteer.html">Volunteering</a>
     <a href="programs.html">Programs</a>
@@ -97,40 +129,72 @@
     <a href="shopping.html">Shopping</a>
   </nav>
 
-  <section class="video-carousel">
-    <iframe src="https://www.youtube.com/embed/NMeAL8J1fco?autoplay=1&mute=1&loop=1&playlist=NMeAL8J1fco"></iframe>
-    <iframe src="https://www.youtube.com/embed/szztLq6u5tU?autoplay=1&mute=1&loop=1&playlist=szztLq6u5tU"></iframe>
-    <iframe src="https://www.youtube.com/embed/Z1BCujX3pw8?autoplay=1&mute=1&loop=1&playlist=Z1BCujX3pw8"></iframe>
-  </section>
-
   <div class="content">
     <h2>About Us</h2>
-    <p>Youth for Cause Foundation was launched by kids from the Greater Toronto Area who wanted to support community workers like firefighters, police officers, healthcare workers, and waste management staff, who assist us in times of crisis and keep our communities running smoothly.</p>
+    <p>
+      Youth for Cause Foundation was launched by kids from the Greater Toronto Area who wanted to support our everyday heroes—firefighters, police, healthcare workers, and waste management staff—who help keep our communities safe and running smoothly.
+    </p>
+    <p>
+      What began as a humble lemonade stand in the fall of 2022 to support firefighters battling devastating Alberta fires has grown into a community-powered movement. Our young founders wanted to do more, and today, we're proud to say that Youth for Cause empowers kids across Peel Region to lead with kindness and contribute to a better future.
+    </p>
+
+    <h2>How You Can Support Us</h2>
+    <p>
+      You can help our mission by donating, volunteering, or even purchasing from our shop. Every action you take supports children-driven initiatives—from making appreciation kits for frontline workers to hosting community cleanups, our impact grows with you.
+    </p>
 
     <h2>Our Programs</h2>
     <ul>
-      <li>Community clean-up events</li>
-      <li>Support for frontline workers</li>
-      <li>Care packages for local hospices</li>
-      <li>Awareness campaigns and fundraising</li>
+      <li>Community Clean-Up Events</li>
+      <li>Support for Frontline Workers</li>
+      <li>Care Packages for Local Hospices</li>
+      <li>Awareness Campaigns and Fundraising</li>
     </ul>
 
-    <h2>Our Volunteers in Action</h2>
-    <div class="gallery">
-      <img src="https://via.placeholder.com/300x200?text=Kids+Volunteering+1" alt="Kids volunteering">
-      <img src="https://via.placeholder.com/300x200?text=Kids+Volunteering+2" alt="Kids volunteering">
-      <img src="https://via.placeholder.com/300x200?text=Kids+Playing" alt="Kids playing">
-    </div>
+    <h2>Get Involved</h2>
+    <p>
+      Click below to make a difference in your community today!
+    </p>
+    <a href="https://www.google.com" class="btn">Donate</a>
+  </div>
 
-    <h2>Meet the Founder</h2>
-    <p>The foundation is currently led by Mesha Vaid, a 9-year-old student at Alloa Public School in Caledon. Mesha, along with her friends, founded this initiative to make a positive impact on their community.</p>
+  <div class="content form-section">
+    <h2>Volunteer With Us</h2>
+    <p>Fill out the form below to become a volunteer. A parent or guardian’s permission is required for minors.</p>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSc-form-link-here/formResponse" method="POST" target="_blank">
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" name="entry.first_name" required>
 
-    <h2>How You Can Support Us</h2>
-    <p>You can support the Youth for Cause Foundation by donating towards our various programs. We focus on supporting community workers, cleaning our surroundings, and assisting local hospices. You can also register as a volunteer or purchase our apparel and accessories to help raise funds for these causes.</p>
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" name="entry.last_name" required>
+
+      <label for="contact-mode">Preferred Mode of Contact:</label>
+      <select id="contact-mode" name="entry.contact_mode">
+        <option value="email">Email</option>
+        <option value="phone">Phone</option>
+      </select>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="entry.email" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="entry.phone">
+
+      <label for="best-time">Best Time to Contact:</label>
+      <input type="text" id="best-time" name="entry.best_time">
+
+      <label for="address">Address (Optional):</label>
+      <input type="text" id="address" name="entry.address">
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="entry.message" rows="4"></textarea>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
   </div>
 
   <footer>
-    &copy; 2025 YouthForCause Foundation | <a href="https://youthforcause.com" style="color:white; text-decoration:underline;">youthforcause.com</a>
+    &copy; 2025 Youth for Cause Foundation | <a href="https://youthforcause.com">youthforcause.com</a>
   </footer>
 
 </body>
