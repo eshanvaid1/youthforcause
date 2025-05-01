@@ -3,54 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Volunteer - Youth for Cause Foundation</title>
+  <title>YouthForCause Foundation</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #ffffff;
-      color: #990000;
+      background-color: #fdf6ec;
+      color: #4b2e2e;
       margin: 0;
       padding: 0;
     }
-    .video-header {
-      position: relative;
-      width: 100%;
-      height: 40vh;
-      overflow: hidden;
-    }
-    .video-header iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
     header {
-      background-color: #990000;
-      padding: 30px;
+      background-color: #8b5e3c;
+      color: white;
+      padding: 40px;
       text-align: center;
-      color: #ffffff;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 3em;
     }
     nav {
-      background-color: #ffffff;
+      background-color: #d6c2a9;
       display: flex;
       justify-content: center;
-      padding: 12px;
-      border-top: 2px solid #990000;
-      border-bottom: 2px solid #990000;
+      gap: 20px;
+      padding: 15px;
     }
     nav a {
-      color: #990000;
       text-decoration: none;
-      padding: 10px 20px;
+      color: #4b2e2e;
       font-weight: bold;
     }
     nav a:hover {
-      background-color: #990000;
-      color: #ffffff;
-      border-radius: 6px;
+      color: #fff;
+      background-color: #8b5e3c;
+      padding: 6px 12px;
+      border-radius: 5px;
+    }
+    .video-carousel {
+      display: flex;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      gap: 10px;
+      padding: 10px;
+    }
+    .video-carousel iframe {
+      flex: 0 0 100%;
+      max-width: 100%;
+      height: 300px;
+      scroll-snap-align: start;
+      border: none;
     }
     .content {
       max-width: 1000px;
@@ -58,82 +60,54 @@
       padding: 0 20px;
     }
     .content h2 {
-      color: #990000;
-      margin-top: 30px;
+      color: #8b5e3c;
     }
-    .content ul {
-      list-style: disc;
-      padding-left: 20px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 12px 24px;
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
       margin-top: 20px;
-      background-color: #990000;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
     }
-    .btn:hover {
-      background-color: #cc0000;
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
     }
     footer {
-      background-color: #990000;
-      color: #ffffff;
+      background-color: #8b5e3c;
+      color: white;
       text-align: center;
       padding: 20px;
       margin-top: 40px;
     }
-    footer a {
-      color: #ffffff;
-      text-decoration: underline;
-    }
-    .image-gallery img {
-      width: 100%;
-      max-width: 500px;
-      margin-bottom: 20px;
-    }
   </style>
 </head>
 <body>
-
-  <div class="video-header">
-    <iframe src="https://www.youtube.com/embed/NMeAL8J1fco?autoplay=1&mute=1&loop=1&playlist=NMeAL8J1fco" allowfullscreen></iframe>
-  </div>
-
   <header>
-    <h1>YouthForCause</h1>
+    <h1>YouthForCause Foundation</h1>
   </header>
 
   <nav>
- <a href="index.html">Home</a>
-  <a href="aboutus">About Us</a>
-  <a href="volunteer.html">Volunteering</a>
-  <a href="programs.html">Programs</a>
-  <a href="donate.html">Donations</a>
-  <a href="shopping.html">Shopping</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="volunteer.html">Volunteering</a>
+    <a href="programs.html">Programs</a>
+    <a href="donate.html">Donations</a>
+    <a href="shopping.html">Shopping</a>
   </nav>
 
+  <section class="video-carousel">
+    <iframe src="https://www.youtube.com/embed/NMeAL8J1fco?autoplay=1&mute=1&loop=1&playlist=NMeAL8J1fco"></iframe>
+    <iframe src="https://www.youtube.com/embed/szztLq6u5tU?autoplay=1&mute=1&loop=1&playlist=szztLq6u5tU"></iframe>
+    <iframe src="https://www.youtube.com/embed/Z1BCujX3pw8?autoplay=1&mute=1&loop=1&playlist=Z1BCujX3pw8"></iframe>
+  </section>
+
   <div class="content">
-    <p>
-      Youth for Cause Foundation was launched by kids from the Greater Toronto Area who wanted to support community workers like firefighters, police officers, healthcare workers, and waste management staff, who assist us in times of crisis and keep our communities running smoothly.
-    </p>
-
     <h2>About Us</h2>
-    <p>
-      The foundation began as an initiative by a few kids who decided to open a lemonade stand in autumn 2022 to raise funds for firefighters battling deadly fires in Alberta. Today, the foundation offers a volunteer program for kids across the Peel Region and aims to support communities and build a stronger country for future generations.
-    </p>
-
-    <h2>How You Can Support Us</h2>
-    <p>
-      You can support the Youth for Cause Foundation by donating towards our various programs. We focus on supporting community workers, cleaning our surroundings, and assisting local hospices. You can also register as a volunteer or purchase our apparel and accessories to help raise funds for these causes.
-    </p>
+    <p>Youth for Cause Foundation was launched by kids from the Greater Toronto Area who wanted to support community workers like firefighters, police officers, healthcare workers, and waste management staff, who assist us in times of crisis and keep our communities running smoothly.</p>
 
     <h2>Our Programs</h2>
-    <p>
-      Our programs engage children and families in meaningful community service. From community clean-up events to appreciation kits for emergency workers, there are many ways you can get involved.
-    </p>
     <ul>
       <li>Community clean-up events</li>
       <li>Support for frontline workers</li>
@@ -141,27 +115,22 @@
       <li>Awareness campaigns and fundraising</li>
     </ul>
 
-    <h2>Meet the Founder</h2>
-    <p>
-      The foundation is currently led by Mesha Vaid, a 9-year-old student at Alloa Public School in Caledon. Mesha, along with her friends, founded this initiative to make a positive impact on their community.
-    </p>
-
-    <div class="image-gallery">
-      <h3>Our Volunteers in Action</h3>
-      <img src="https://via.placeholder.com/500x300?text=Volunteer+Image+1" alt="Volunteer Image 1">
-      <img src="https://via.placeholder.com/500x300?text=Volunteer+Image+2" alt="Volunteer Image 2">
-      <img src="https://via.placeholder.com/500x300?text=Volunteer+Image+3" alt="Volunteer Image 3">
+    <h2>Our Volunteers in Action</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x200?text=Kids+Volunteering+1" alt="Kids volunteering">
+      <img src="https://via.placeholder.com/300x200?text=Kids+Volunteering+2" alt="Kids volunteering">
+      <img src="https://via.placeholder.com/300x200?text=Kids+Playing" alt="Kids playing">
     </div>
 
-    <h2>Get Involved</h2>
-    <p>
-      Click below to register as a volunteer and start making a difference in your community today!
-    </p>
-    <a href="#" class="btn">Register to Volunteer</a>
+    <h2>Meet the Founder</h2>
+    <p>The foundation is currently led by Mesha Vaid, a 9-year-old student at Alloa Public School in Caledon. Mesha, along with her friends, founded this initiative to make a positive impact on their community.</p>
+
+    <h2>How You Can Support Us</h2>
+    <p>You can support the Youth for Cause Foundation by donating towards our various programs. We focus on supporting community workers, cleaning our surroundings, and assisting local hospices. You can also register as a volunteer or purchase our apparel and accessories to help raise funds for these causes.</p>
   </div>
 
   <footer>
-    &copy; 2025 Youth for Cause Foundation | <a href="https://youthforcause.com">youthforcause.com</a>
+    &copy; 2025 YouthForCause Foundation | <a href="https://youthforcause.com" style="color:white; text-decoration:underline;">youthforcause.com</a>
   </footer>
 
 </body>
